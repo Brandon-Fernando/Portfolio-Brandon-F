@@ -1,0 +1,87 @@
+.about-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 5;
+    margin-top: 2rem;
+}
+
+.about-title{
+    font-family: "moderniz";
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+.about-description{
+    border-radius: 10px;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-description p{
+    font-size: 0.5rem;
+    color: white;
+}
+
+.about-contact{
+    border-radius: 10px;
+    margin: 0 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+
+.contact-title{
+    margin: 0;
+}
+
+.label{
+    font-size: 0.6rem;
+}
+
+.contact-title span{
+    font-size: 1rem;
+    border-radius: 9px;
+    color: white;
+    display: inline-block;
+    line-height: 1;  
+    margin: 0;
+}
+
+.about-contact p{
+    font-size: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.num-email i{
+    border-radius: 10px;
+    padding: 0.4rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials i{
+    flex: 1;
+    color: white;
+    padding: 0.8rem 0;
+    border-radius: 10px;
+    margin: 0 0.2rem;
+}
+
+
+.about-content.show{
+    transition-delay: 0s;   
+}
+
+.about-contact.show{
+    transition-delay: 0.4s;   
+}

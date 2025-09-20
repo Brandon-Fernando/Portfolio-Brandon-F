@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  background: #C4ADEB;
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start; /* makes it snap to top */
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass{
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(209, 209, 209, 0.195);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.142);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.089);
+  background-color: rgba(217, 217, 217, 0.14);
+  
+}
+
+/* BALL */
+.ball {
+  position: absolute;
+  top: 120vh; /* starts right after home */
+  left: -20vw; 
+  width: 80vw;
+  object-fit: cover; /* stretch without distorting */
+  z-index: 0; /* behind sections */
+  pointer-events: none; /* so it doesn't block clicks */
+}
+
+.ball-2{
+  position: absolute;
+  top: 120vh; 
+  right: 4vw; 
+  width: 20vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(45deg);
+}
+
+.ball-3{
+  position: absolute;
+  top: 170vh; 
+  right: 4vw; 
+  width: 60vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(-45deg);
+}
+
+.ball-4{
+  position: absolute;
+  top: 220vh; 
+  right: -20vw; 
+  width: 90vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(180deg);
+}
+
+.ball-5{
+  position: absolute;
+  top: 260vh; 
+  left: -20vw; 
+  width: 50vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(80deg);
+}
+
+.ball-6{
+  position: absolute;
+  top: 290vh; 
+  right: 0vw; 
+  width: 70vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(20deg);
+}
+
+.ball-7{
+  position: absolute;
+  top: 350vh; 
+  left: -40vw; 
+  width: 100vw;
+  object-fit: cover; 
+  z-index: 0; 
+  pointer-events: none; 
+  transform: rotate(180deg);
+}
+
+.title{
+  font-family: "moderniz";
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 4.5rem;
+  z-index: 6;
+}
+
+
+/* HERO */
+.hero-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #C4ADEB;
+  position: relative; 
+  overflow: hidden;
+}
+
+.hero-titles{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title{
+  color: white;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.hero-subtitle{
+  color: white;
+  font-size: 0.7rem;
+  position: relative;
+  margin-top: 0;
+}
+
+.hero-container img{
+  width: 95%;
+  position: absolute;
+  padding-bottom: 2rem;
+}
+
+.hero-title.show {
+  transition-delay: 0s;   
+}
+
+.hero-subtitle.show {
+  transition-delay: 0.4s; 
+}
+
+
+/* ABOUT */
+.about-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* PROJECTS */
+.projects-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+/* EXPERIENCE */
+.experience-container{
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+/* SKILLS */
+.skills-container{
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
