@@ -53,19 +53,17 @@
 
 
 /* rotating circle */
-.circle-container svg{
-    width: 11rem !important; /* Force fixed size */
-    height: 11rem !important;
-    min-width: 11rem;
-    min-height: 11rem;
-    flex-shrink: 0; /* Prevent shrinking */
-}
 svg{
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: center;
+    width: 80vw;       /* scales with screen */
+    height: 80vw;
+    max-width: 12rem;  /* max size on big screens */
+    max-height: 12rem;
+    padding: 1rem;
 }
 
 @keyframes rotate{
