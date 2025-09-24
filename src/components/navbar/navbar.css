@@ -4,16 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: transparent;
     z-index: 100;
 }
 
+/* nav item container */
 .nav-items {
     display: flex;
     position: relative;
     width: fit-content;        
-    /* background-color: rgba(200, 206, 221, 0.417); */
     backdrop-filter: blur(10px); 
     padding: 0.3rem 0rem;    
     border-radius: 10px;     
@@ -21,7 +21,7 @@
 
 
   
-/* Individual nav items */
+/* individual nav items */
 .nav-item {
     color: white;
     padding: 0.4rem 0.3rem;
@@ -37,23 +37,41 @@
     color: white; 
 }
   
-/* Add spacing between items */
+/* add spacing between items */
 .nav-item + .nav-item {
     margin-left: 0.5rem;
 }
   
-/* Optional active text style */
-.nav-item.active {
-    color: white;
-}
   
-/* Sliding bubble */
+/* sliding bubble */
 .nav-bubble {
     position: absolute;
     bottom: 0;               
-    height: 100%;             
-    /* background-color: rgba(133, 135, 143, 0.5); */
+    height: 99%;             
     border-radius: 10px;
     transition: all 0.8s ease; 
     z-index: 1;              
+}
+
+/* text color changes after homescreen */
+.light-text .nav-item {
+    color: black;
+}
+  
+.light-text .nav-item.active {
+    color: black;
+}
+  
+.dark-text .nav-item {
+    color: white;
+}
+  
+.dark-text .nav-item.active {
+    color: white;
+}
+
+@media (min-width: 445px){
+    .nav-item{
+        font-size: 0.6rem;
+    }
 }

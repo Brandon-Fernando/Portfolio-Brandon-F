@@ -73,6 +73,14 @@ button:focus-visible {
     url("./fonts/Moderniz.otf") format("truetype");
 }
 
-:root{
-  font-family: "moderniz";
+@font-face {
+  font-family: "oswald-bold";
+  src: local("Oswald-Bold"),
+    url("./fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "oswald";
+  src: local("Oswald-Regular"),
+    url("./fonts/Oswald-Regular.ttf") format("truetype");
 }

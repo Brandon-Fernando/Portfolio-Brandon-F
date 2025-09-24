@@ -1,3 +1,174 @@
 .skills-content {
     color: white;
+    width: 80vw;
+    max-width: 800px;
+    height: 100%;
+    font-family: "moderniz";
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.skills-card{
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.language-title span{
+    font-size: 1rem;
+    border-radius: 9px;
+    color: white;
+    display: inline-block;
+    line-height: 1;  
+    margin: 0;
+}
+
+.languages-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.icon-lang-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language{
+    font-size: 0.3rem;
+}
+
+.icon-lang{
+    text-align: center;
+    flex: 0 0 calc(25% - 40px);
+    width: 4rem;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.image{
+    width: 30px;
+    height: 30px;
+    padding: 0 1rem;
+    padding-top: 0.3rem;
+}
+
+.libitem-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.libframe{
+    border-radius: 5px;
+    margin: 5px;
+    width: 5rem;
+}
+
+.libframe p{
+    text-align: center;
+    flex: 0 0 calc(25% - 40px);
+    margin: 5px;
+    font-size: 0.4rem;
+}
+
+.content.show:nth-child(1) { transition-delay: 0s; }
+.content.show:nth-child(2) { transition-delay: 0.2s; }
+.content.show:nth-child(3) { transition-delay: 0.4s; }
+.content.show:nth-child(4) { transition-delay: 0.6s; }
+.content.show:nth-child(5) { transition-delay: 0.8s; }
+.content.show:nth-child(6) { transition-delay: 1s; }
+.content.show:nth-child(7) { transition-delay: 1.2s; }
+
+@media (min-width: 490px) {
+    .image{
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .icon-lang{
+        text-align: center;
+        width: 5rem;
+    }
+   
+}
+
+@media (min-width: 565px){
+    .image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .language{
+        font-size: 0.4rem;
+    }
+}
+
+@media (min-width: 603px){
+    .libframe{
+        width: 6rem;
+    }
+
+    .libframe p{
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 615px){
+    .image{
+        width: 60px;
+        height: 60px;
+        padding-top: 0.4rem;
+    }
+
+    .icon-lang{
+        text-align: center;
+        width: 7rem;
+    }
+
+    .language{
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 690px){
+    .image{
+        width: 70px;
+        height: 70px;
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 703px) {
+    .libframe{
+        width: 7rem;
+    }
+
+    .libframe p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 803px){
+    .libframe{
+        width: 8rem;
+    }
+
+    .libframe p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 903px){
+    .libframe{
+        width: 9rem;
+    }
+
+    .libframe p{
+        font-size: 0.7rem;
+    }
 }

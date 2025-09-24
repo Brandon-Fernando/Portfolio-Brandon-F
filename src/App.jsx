@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
+import Hero from './components/hero/hero'
 import Navbar from './components/navbar/navbar'
 import About from './components/about/about'
 import Projects from './components/projects/projects'
@@ -60,6 +61,24 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const balls = document.querySelectorAll('.ball, .ball-2, .ball-3, .ball-4, .ball-5, .ball-6, .ball-7, .ball-8');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // scale up
+        } else {
+          entry.target.classList.remove('show'); // scale down when leaving viewport
+        }
+      });
+    }, { threshold: 0.1 }); 
+  
+    balls.forEach(ball => observer.observe(ball));
+  
+    return () => observer.disconnect();
+  }, []);
+  
+
 
   return (
     <>
@@ -70,22 +89,19 @@ function App() {
         {/* Hero */}
         <section ref={(el) => (sectionsRef.current[0] = el)} id='home'>
           <div className='hero-container'>
-            <img src="/hero-gradient.png" alt="gradient" />
-            <div className='hero-titles content'>
-              <h1 className='hero-title content'>Brandon Fernando</h1>
-              <h1 className='hero-subtitle content'>Portfolio</h1>
-            </div>
+            <Hero/>
           </div>
         </section>
 
         {/* Background Gradient */}
-        <img className="ball" src="/ball.png" alt="ball" />
-        <img className="ball-2" src="/ball.png" alt="ball" />
-        <img className="ball-3" src="/ball.png" alt="ball" />
-        <img className="ball-4" src="/ball.png" alt="ball" />
-        <img className="ball-5" src="/ball.png" alt="ball" />
-        <img className="ball-6" src="/ball.png" alt="ball" />
-        <img className="ball-7" src="/ball.png" alt="ball" />
+        <img className="ball balls" src="/ball.png" alt="ball" />
+        <img className="ball-2 balls" src="/ball.png" alt="ball" />
+        <img className="ball-3 balls" src="/ball.png" alt="ball" />
+        <img className="ball-4 balls" src="/ball.png" alt="ball" />
+        <img className="ball-5 balls" src="/ball.png" alt="ball" />
+        <img className="ball-6 balls" src="/ball.png" alt="ball" />
+        <img className="ball-7 balls" src="/ball.png" alt="ball" />
+        <img className="ball-8 balls" src="/ball.png" alt="ball" />
 
         {/* About */}
         <section ref={(el) => (sectionsRef.current[1] = el)} id='about'>
@@ -100,7 +116,7 @@ function App() {
         {/* Projects */}
         <section ref={(el) => (sectionsRef.current[2] = el)} id='projects'>
           <div className='projects-container'>
-            <h1 className='title content'>Projects</h1>
+            <h1 className='title'>Projects</h1>
             <Projects/>
           </div>
         </section>

@@ -1,20 +1,22 @@
+/* containers */
 .experience-content{
-    width: 100%;
+    width: 80vw;
+    max-width: 800px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     z-index: 5;
 }
 
+/* individual card */
 .card-container{
-    margin: 0 2rem;
     padding: 1rem;
     border-radius: 10px;
     font-size: 0.3rem;
     color: white;
+    font-family: "moderniz";
 }
 
 .titles{
@@ -35,6 +37,23 @@
 
 .description{
     white-space: normal;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
+}
+
+
+@media (min-width: 500px){
+    .titles{
+        font-size: 0.4rem;
+    }
+}
+
+@media (min-width: 800px){
+    .titles{
+        font-size: 0.6rem;
+    }
+
+    .description{
+        font-size: 0.7rem;
+    }
 }
 

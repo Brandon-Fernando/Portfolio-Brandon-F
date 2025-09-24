@@ -24,9 +24,10 @@ const Navbar = ({ onNavClick }) => {
 		}
 	}, [activeIndex]);
 
+	const isHero = activeIndex === 0;
 
 	return(
-		<nav className="navbar">
+		<nav className={`navbar ${isHero ? "light-text" : "dark-text"}`}>
 			<div className="nav-items glass">
 				{navItems.map((item, index) => (
 					<div 
