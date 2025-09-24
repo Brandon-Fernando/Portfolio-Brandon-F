@@ -9,7 +9,7 @@ export default function Hero(){
 			</div>
 			<div className='glassbox'></div>
 			<div className='circle-container'>
-				<svg viewBox='0 0 100 100' width="150" height="150">
+				<svg viewBox='0 0 100 100' width="11rem" height="11rem">
 					<defs>
 						<path id='circle' d='
 							M 50, 50
