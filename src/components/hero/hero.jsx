@@ -20,7 +20,7 @@ export default function Hero(){
 					</defs>
 					<text fontSize="10" fill="black" textLength="232" lengthAdjust="spacing">
 						<textPath href="#circle" startOffset="0%">
-						 •PORTFOLIO•PORTFOLIO•PORTFOLIO
+						 •PORTFOLIO•PORTFOLIO•PORTFOLIO•PORTFOLIO•PORTFOLIO
 						</textPath>
 					</text>
 				</svg>
