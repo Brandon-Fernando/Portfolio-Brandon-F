@@ -13,14 +13,14 @@ export default function Hero(){
 					<defs>
 						<path id='circle' d='
 							M 50, 50
-							m -30, 0
-							a 30,30 0 1,1 60,0
-							a 30,30 0 1,1 -60,0'
+							m -37, 0
+							a 37,37 0 1,1 74,0
+							a 37,37 0 1,1 -74,0'
 						/>
 					</defs>
-					<text fontSize="10" fill="black" textLength="283" lengthAdjust="spacing">
-						<textPath href="#circle">
-							•PORTFOLIO•PORTFOLIO•PORTFOLIO 
+					<text fontSize="10" fill="black" textLength="232" lengthAdjust="spacing">
+						<textPath href="#circle" startOffset="0%">
+						 •PORTFOLIO•PORTFOLIO•PORTFOLIO
 						</textPath>
 					</text>
 				</svg>
